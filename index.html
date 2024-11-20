@@ -14,17 +14,55 @@
         height: 100px;
         position: fixed;
         top: 0px;
+        left: 0px;
         background-color: #171717;
+      }
+      
+      #nav {
+        position: relative;
+        top: 40px;
+        left: 50%;
+      }
+      
+      #nav ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+      }
+      
+      #nav li {
+        float: left;
+        width: 5em;
+        text-align: center;
+      }
+      
+      #nav a {
+        padding: 10px;
+        text-decoration: none;
+        color: white;
+        position: relative;
+        left: 2px;
+      }
+      
+      #nav li a:hover {
+        color: #111;
       }
     </style>
   </head>
   
   <body>
     <div id="header">
-      <!-- header stuff -->
+        <div id="nav">
+          <ul>
+            <li><a href="/">Home</a></li>
+            <li><a href="/">Classes</a></li>
+            <li><a href="/">Catering</a></li>
+            <li><a href="/">About</a></li>
+          </ul>
+        </div>
     </div>
     <p>
-      asdasdasd
+      hello
     </p>
   </body>
 </html>
