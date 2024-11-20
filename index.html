@@ -4,15 +4,17 @@
     <!-- created by Katherine Chen on 11/19/2024 -->
     <meta charset="utc-8">
     <title>Katherine Chen Portfolio</title>
+    <link href='https://fonts.googleapis.com/css?family=Instrument Sans' rel='stylesheet'>
+    
     <style>
       body {
-        background-color: red;
+        font-family: 'Instrument Sans';
+        background-color: grey;
       }
       
       #header {
         width: 100%;
         height: 100px;
-        padding: 0px 5% 0px 5%;
         position: fixed;
         top: 0px;
         left: 0px;
@@ -20,6 +22,7 @@
       }
       
       #nav {
+        padding: 0px 3%;
         display: flex;
         align-items: center;
         justify-content: space-between	;
@@ -30,6 +33,8 @@
       #nav ul li{
         list-style: none;
         display: inline-block;
+        position: relative;
+        left: -15px;
         margin: 20px 20px;
       }
       
@@ -43,26 +48,37 @@
         color: #1E31FA;
       }
       
-      #contact {
+      .contact {
         background-color: #1E31FA;
+        border: none;
         color: white;
-        padding: 7px;
+        padding: 10px 15px;
         border-radius: 5px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 15px;
+        margin: 4px 2px;
       }
     </style>
   </head>
   
   <body>
     <div id="header">
-        <div id="nav">
-          <h1>LOGO</h1>
-          <ul>
-            <li><a href="/">Home</a></li>
-            <li><a href="/">About</a></li>
-            <li><a href="/">Projects</a></li>
-          </ul>
-          <div id="contact">Contact Me</div>
-        </div>
+      <div id="nav">
+        <h1>LOGO</h1>
+        <ul>
+          <li><a href="/">Home</a></li>
+          <li><a href="/">About</a></li>
+          <li><a href="/">Projects</a></li>
+        </ul>
+        <div class="contact">Contact Me</div>
+      </div>
+      <div class="header-text">
+        <h1>Hello I’m Katherine Chen</h1>
+        Committed to delivering reliable, high-quality work<br> quickly. Here to ensure your projects meet the highest<br> standards and deadlines.
+      </div>
+      <button class="contact">Contact Me</button>
     </div>
     <p>
       hello
