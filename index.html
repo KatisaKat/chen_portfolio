@@ -51,7 +51,7 @@
       
       #header-text {
         padding: 100px 5%;
-        font-size: 12px;
+        font-size: 20px;
       }
       
       .contact {
@@ -65,6 +65,16 @@
         display: inline-block;
         font-size: 15px;
         margin: 4px 2px;
+      }
+      
+      #grid-container {
+        padding: 30px 5%;
+      }
+      .grid-item {
+        display: grid;
+        grid-template-columns: auto auto auto;
+        grid-gap: 40px;
+        margin-top: 50px;
       }
     </style>
   </head>
@@ -80,14 +90,26 @@
         </ul>
         <div class="contact">Contact Me</div>
       </div>
-      <div id="header-text">
-        <h1>Hello <br> I’m Katherine Chen</h1>
-        Committed to delivering reliable, high-quality work<br> quickly. Here to ensure your projects meet the highest<br> standards and deadlines.<br><br>
-        <button class="contact">Contact Me</button>
-      </div>
     </div>
-    <p>
-      hello
-    </p>
+    <div id="header-text">
+      <h1>Hello <br> I’m Katherine Chen</h1>
+      Committed to delivering reliable, high-quality work<br> quickly. Here to ensure your projects meet the highest<br> standards and deadlines.<br><br>
+      <button class="contact">Contact Me</button>
+    </div>
+    <div id="grid-container">
+      <div class="grid-item">
+        <div>
+          <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+        </div>
+
+        <div>
+          <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+        </div>
+
+        <div>
+          <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+        </div>
+    </div>  
+    </div>
   </body>
 </html>
