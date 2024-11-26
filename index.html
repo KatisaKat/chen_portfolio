@@ -3,14 +3,14 @@
   <head>
     <!-- created by Katherine Chen on 11/19/2024 -->
     <meta charset="utc-8">
-    <title>Katherine Chen Portfolio</title>
+    <title>Katherine Chen Portfolio Home</title>
     <link href='https://fonts.googleapis.com/css?family=Instrument Sans' rel='stylesheet'>
     
     <style>
       body {
         font-family: 'Instrument Sans';
         color: white;
-        background-color: grey;
+        background-color: #131313;
       }
       
       #header {
@@ -20,6 +20,7 @@
         top: 0px;
         left: 0px;
         background-color: #171717;
+        z-index: 5;
       }
       
       #nav {
@@ -50,7 +51,8 @@
       }
       
       #header-text {
-        padding: 100px 5%;
+        float: left;
+        padding: 200px 10%;
         font-size: 20px;
       }
       
@@ -67,24 +69,82 @@
         margin: 4px 2px;
       }
       
-      #grid-container {
-        padding: 30px 5%;
-      }
-      .grid-item {
-        display: grid;
-        grid-template-columns: auto auto auto;
-        grid-gap: 40px;
-        margin-top: 50px;
-      }
       .underline {
         width: 370px;
         height: 30px;
         background: #1E31FA;
         opacity: 1;
         position: absolute;
-        top: 210px;
-        left: 5%;
+        top: 310px;
+        left: 10%;
         z-index: -1;
+      }
+      
+      .image {
+      	  padding: 215px 0px 0px 100px;
+      }
+      
+      #about-us {
+      	  display: flex;
+      	  flex-direction: column;
+      	  justify-content: center;
+      	  align-items: center;
+      	  height: 100vh;
+        	padding: 20px;
+        	box-sizing: border-box;
+        	clear: both;
+      	  position: relative;
+      	  background-color: #131313;
+      }
+      
+      #portrait {
+		width: 30%;
+		object-fit: contain;
+		z-index: 1;
+      }
+      
+      .about {
+	    position: absolute;
+    	bottom: 58%;
+		left: 21%;
+		font-size: 150px;
+		font-weight: bold;
+		z-index: 2;
+      }
+      
+      .about-text, .about-text2 {
+	    position: relative;
+		font-size: 15px;
+		max-width: 600px;
+		z-index: 1;
+      }
+      
+      .about-text {
+		top: 500px;
+		right: 500px;
+		text-align: left;
+      }
+      
+      .about-text2 {
+		bottom: 500px;
+		left: 500px;
+		text-align: right;
+      }
+      
+      .me {
+		position: absolute;
+		top: 57%;
+		right: 30%;
+		font-size: 150px;
+		font-weight: bold;
+		z-index: 2;
+      }
+      
+      #circ {
+		position: absolute;
+		top: 45%;
+		right: 22%;
+		z-index: 0;
       }
     </style>
   </head>
@@ -94,9 +154,9 @@
       <div id="nav">
         <h1>LOGO</h1>
         <ul>
-          <li><a href="/">Home</a></li>
+          <li><a href="chen_portfolio_home.html">Home</a></li>
           <li><a href="/">About</a></li>
-          <li><a href="/">Projects</a></li>
+          <li><a href="chen_portfolio_projects.html">Projects</a></li>
         </ul>
         <div class="contact">Contact Me</div>
       </div>
@@ -105,22 +165,28 @@
       <div class="underline"></div>
       <h1>Hello <br> I’m Katherine Chen</h1>
       Committed to delivering reliable, high-quality work<br> quickly. Here to ensure your projects meet the highest<br> standards and deadlines.<br><br>
-      <button class="contact">Contact Me</button>
+      <div class="contact">Contact Me</div>
     </div>
-    <div id="grid-container">
-      <div class="grid-item">
-        <div>
-          <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
-        </div>
-
-        <div>
-          <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
-        </div>
-
-        <div>
-          <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
-        </div>
-    </div>  
-    </div>
+    <img class="image" src="https://via.placeholder.com/300" alt="n/a" width="300">
+    
+    
+    <div id="about-us">
+   		<h1 class="about">ABOUT</h1>
+   		<p class="about-text">I am a 2nd year Global Business Digital <br>
+   		Arts student currently studying at the <br>
+   		University of Waterloo. My interests are <br>
+   		engaging in UX and UI design, as well as <br>
+   		various other forms of digital design. </p>
+   		<img id="portrait" src="Portrait.jpg" alt="n/a" width="35%">
+   		<p class="about-text2">I am a 2nd year Global Business Digital <br>
+   		Arts student currently studying at the <br>
+   		University of Waterloo. My interests are <br>
+   		engaging in UX and UI design, as well as <br>
+   		various other forms of digital design. </p>
+   		<h1 class="me">ME</h1>
+   		<svg id="circ" height="500" width="500" xmlns="http://www.w3.org/2000/svg">
+		  <circle r="150" cx="250" cy="250" fill="#1E31FA" />
+		</svg>
+   	</div>
   </body>
 </html>
